@@ -1,0 +1,25 @@
+
+<!-- enquire.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js"></script>
+
+<script>
+$(function () {
+
+	// Code to allow images that are floated right in desktop view to appear after the text in mobile
+	enquire.register("screen and (min-width: 660px)", {
+		match: function () {
+			// Take the image and move it in front of the preceding element
+			$(".image-after").parent().prev().before($(".image-after").parent())
+		},
+		unmatch: function () {
+			// Take the image and move it in front of the following element
+			$(".image-after").parent().next().after($(".image-after").parent())
+		}
+	});
+
+	$('#menu-toggle').on("click", function ()
+	{
+		$('#top-nav ul').toggleClass("hidden");
+	});
+});
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html <% if(config.language) { %>lang="<%= config.language %>"<% } else { %>lang="en"<% }%>>
+
+	<!-- html head tag -->
+	<%- partial('_partial/html/header') %>
+
+	<body>
+
+		<!-- Header -->
+		<%- partial('_partial/page-header') %>
+		
+		<!-- Menu -->
+		<%- partial('_partial/menu') %>
+
+		<div class="hoz-rule" id="hrHack">&nbsp;</div>
+
+		<!-- Main Content -->
+		<%- body %>
+
+		<div class="hoz-rule clear-fix">&nbsp;</div>
+
+		<!-- Footer -->
+		<%- partial('_partial/page-footer') %>
+
+		<!-- html footer scripts -->
+		<%- partial('_partial/html/footer') %>
+
+	</body>
+
+</html>
