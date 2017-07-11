@@ -9,15 +9,13 @@
 		<!-- Header -->
 		<%- partial('_partial/page-header') %>
 		
-		<!-- Menu -->
-		<%- partial('_partial/menu') %>
-
-		<div class="hoz-rule" id="hrHack">&nbsp;</div>
+		<!-- Menu hidden on index page -->
+		<%if (path!="index.html"){ %>
+			<%- partial('_partial/menu') %>
+		<% } %>
 
 		<!-- Main Content -->
 		<%- body %>
-
-		<div class="hoz-rule clear-fix">&nbsp;</div>
 
 		<!-- Footer -->
 		<%- partial('_partial/page-footer') %>

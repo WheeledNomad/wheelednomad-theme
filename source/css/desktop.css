@@ -1,0 +1,15 @@
+#site-intro {
+    background: red;
+    padding: 6px;
+    border-radius: 6px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#about-text {
+    background: white;
+    padding: 6px;
+    border-radius: 6px;
+}

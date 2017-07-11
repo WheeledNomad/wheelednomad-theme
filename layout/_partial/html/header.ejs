@@ -10,7 +10,6 @@
 	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
 	<!-- Typekit Fonts -->
-
 	<script>
 	  (function(d) {
 	    var config = {
@@ -38,11 +37,12 @@
 	%>
 	<title><%= title.join(' - ') %></title>
 
-	<!-- Custom CSS -->
+	<!-- CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.7.22/css/materialdesignicons.min.css">
-	<%- css('css/unconint.css') %>
-	<%- css('css/style.css') %>
+	<link rel="stylesheet" href="/css/phone.css" />
+	<link rel="stylesheet" media="(min-width: 640px)" href="/css/tablet.css" />
+	<link rel="stylesheet" media="(min-width: 960px)" href="/css/desktop.css" />
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
