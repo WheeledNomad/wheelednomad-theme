@@ -36,7 +36,7 @@
 
 		<div id="posts-list">
 			<ul>
-				<% site.posts.slice(0, 5).each(function(item){ %>
+				<% site.posts.slice(0, 3).each(function(item){ %>
 					<li class="clear-fix">
 						<% if (item.image) { %>
 							<img src="<%- config.root %>images/thumbs<%- item.path.slice(5).slice(0, -1) %>.jpg" />
@@ -49,6 +49,9 @@
 					</li>
 				<% }); %>
 			</ul>
+
+			<span id="blog"><a href="/posts/"><i class="mdi mdi-note"></i> My Blog</a></span>
+
 		</div>
 
 	</div>

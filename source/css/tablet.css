@@ -1,3 +1,9 @@
+header {
+	background-image: url('/images/blurred-photos-1280.jpg');
+	background-size: 640px 180px;
+	min-height: 180px;
+}
+
 /* Index Page */
 
 #content {

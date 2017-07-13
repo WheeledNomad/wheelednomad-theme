@@ -15,12 +15,15 @@ body {
 #about-text {
 	margin-left: 6px;
 }
+
 header {
+  margin: 6px auto 0 auto;
+}
+
+#site-header {
+	background-image: url('/images/blurred-photos-1920.jpg');
   background-size: 960px 220px;
-  height: 220px;
-  width: 960px;
-  text-align: center;
-  margin: 6px auto 4px auto;
+  min-height: 220px;
 }
 
 #site-header h1 {
