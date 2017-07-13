@@ -13,13 +13,17 @@
 		</div>
 
 		<div id="about-text">
-			<h2>About</h2>
-			<p>Stuff about me and the site will be displayed here, it'll pull from the about.md file eventually. But for now I'm just typing out a few lines so that I've got something to work with.</p>
+			<h3>About</h3>
+			<p>
+				<% site.posts.filter(function (item) { return item.title == "About"; }).each(function (item) { %>
+					<%- item.excerpt %> <a href="<%- config.root %><%- item.path %>">More&hellip;</a>
+					<% }); %>
+			</p>
 		</div>
 
 	</div>
 
-	<div>
+	<div id="content">
 
 		<div id="instagram">
 
@@ -33,14 +37,14 @@
 		<div id="posts-list">
 			<ul>
 				<% site.posts.slice(0, 5).each(function(item){ %>
-					<li>
+					<li class="clear-fix">
 						<% if (item.image) { %>
 							<img src="<%- config.root %>images/thumbs<%- item.path.slice(5).slice(0, -1) %>.jpg" />
 						<% } else { %>
 							<img src="<%- config.root %>images/thumbs/no-image.jpg" />
 						<% } %>
 
-						<h3><%- item.title || theme.default_post_title || "Untitled" %></h3>
+						<h4><%- item.title || theme.default_post_title || "Untitled" %></h4>
 						<span class="post-excerpt"><%- item.excerpt.slice(0, item.excerpt.indexOf(".") + 1) %> <a href="<%- config.root %><%- item.path %>">More&hellip;</a></span>
 					</li>
 				<% }); %>

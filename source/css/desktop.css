@@ -1,15 +1,32 @@
+body {
+	max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.videoEmbedWrapper {
+	width:  560px;
+}
+
 #site-intro {
-    background: red;
-    padding: 6px;
-    border-radius: 6px;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+	display: flex;
 }
 
 #about-text {
-    background: white;
-    padding: 6px;
-    border-radius: 6px;
+	margin-left: 6px;
+}
+header {
+  background-size: 960px 220px;
+  height: 220px;
+  width: 960px;
+  text-align: center;
+  margin: 6px auto 4px auto;
+}
+
+#site-header h1 {
+  font-size: 68px;
+}
+
+#site-header h2 {
+  font-size: 32px;
 }

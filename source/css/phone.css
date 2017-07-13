@@ -1,3 +1,20 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'painted-regular';
+    src: url('fonts/painted-regular-webfont.woff2') format('woff2'),
+         url('fonts/painted-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Whole Site */
+
+body
+{
+  font-family: filson-soft;
+}
+
 .site-width {
 	width: 100%;
 }
@@ -9,6 +26,38 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin: 0;
 }
+
+.clear-fix
+{
+  clear: both;
+}
+
+/* Site Title */
+
+header {
+  background-image: url('/images/blurred-photos-big.jpg');
+  border-radius: 6px;
+}
+
+#site-header {
+  font-family: sketchnote-text;
+}
+
+#site-header h1 {
+  font-size: 32px;
+  color: #0000ff;
+}
+
+#site-header h2 {
+  font-size: 16px;
+  color: #ff00ff;
+}
+
+#site-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 /* Index Page */
 
@@ -75,6 +124,7 @@ p {
 }
 
 #posts-list li {
+  min-height: 128px;
   display: block;
   background: white;
   padding: 6px;

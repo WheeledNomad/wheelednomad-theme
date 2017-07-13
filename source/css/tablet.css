@@ -1,0 +1,11 @@
+/* Index Page */
+
+#content {
+	display: flex;
+	align-items: flex-start;
+}
+
+#instagram {
+  width: 320px;
+  flex-shrink: 0;
+}
